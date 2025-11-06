@@ -8,3 +8,4 @@ CREATE TABLE grades (grade_id INT PRIMARY KEY, student_id INT, subject VARCHAR(5
 CREATE TABLE department (department_id INT PRIMARY KEY, department_name VARCHAR (50))
 CREATE TABLE subjects (subject_id INT PRIMARY KEY, subject_name VARCHAR (50), department_id INT, FOREIGN KEY (department_id) REFERENCES department (department_id));
 CREATE TABLE attendance (attendance_id INT PRIMARY KEY, student_id INT, date DATE, status VARCHAR(10), FOREIGN KEY (student_id) REFERENCES students(student_id))
+CREATE TABLE users (user_id INT PRIMARY KEY, user_name VARCHAR(50), password VARCHAR(100), role VARCHAR(20));
