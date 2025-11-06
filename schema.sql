@@ -1,0 +1,2 @@
+CREATE DATABASE school_db;
+USE school_db;
